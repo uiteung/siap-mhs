@@ -287,68 +287,641 @@
                         <a href="index.html">Home</a> / Profil Mahasiswa
                     </h5>
 					<h1 class="h3 mb-3"><strong>Profil Mahasiswa</strong></h1>
+                    <!-- Biodata Mahasiswa -->
+                    <h1 class="h4 mb-3">Biodata Mahasiswa</h1>
 					<div class="row">
-                        <!-- Tabel Profil Mahasiswa -->
-						<div class="col-12">
-							<div class="card flex-fill">
-								<table class="table align-middle mb-0 bg-white">
-									<thead class="bg-light">
-									  <tr>
-										<th>Foto</th>
-										<th>NPM</th>
-										<th>Nama Mahasiswa</th>
-										<th>Program Studi</th>
-										<th>Status</th>
-                                        <th>No. Telepon</th>
-                                        <th>Email</th>
-                                        <th>Angkatan</th>
-                                        <th>Kelas</th>
-                                        <th>Action</th>
-									  </tr>
-									</thead>
-									<tbody>
-									  <tr>
-										<td>
-										  <div class="d-flex align-items-center">
-											<div class="ms-3">
-											  <p class="fw-bold mb-1">Foto</p>
-											</div>
-										  </div>
-										</td>
-										<td>
-										  <p class="fw-normal mb-1">1204077</p>
-										</td>
-										<td>
-										  <p class="fw-normal mb-1">Bachtiar Ramadhan</p>
-										</td>
-										<td>
-										  <p class="fw-normal mb-1">14, Teknik Informatika, D4</p>
-										</td>
-										<td>
-										  <p class="fw-normal mb-1">Reguler</p>
-										</td>
-                                        <td>
-                                          <p class="fw-normal mb-1">6285213921331</p>
-                                        </td>
-										<td>
-                                          <p class="fw-normal mb-1">bachtiarramadhan26@gmail.com</p>
-                                        </td>
-                                        <td>
-                                          <p class="fw-normal mb-1">2020</p>
-                                        </td>
-                                        <td>
-                                          <p class="fw-normal mb-1">14-20-02</p>
-                                        </td>
-                                        <td>
-                                          <button class="btn btn-primary btn-sm">Detail</button>
-                                          <button class="btn btn-warning btn-sm">Edit</button>
-                                        </td>
-									  </tr>
-									</tbody>
-								  </table>
-							</div>
-						</div>
-					</div>
+                        <div class="col-12">
+                          <div class="card">
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col-md-2">
+                                    <h1 class="h4 mb-3 text-center">Foto Mahasiswa</h1>
+                                    <img src="img/avatars/student-icon.jpg" alt="" style="max-width: 100%; height: auto;">
+                                </div>
+                                <div class="col-md-10">
+                                    <form>
+                                        <!-- 2 column grid layout with text inputs for the first and last names -->
+                                        <div class="row mb-2">
+                                        <!-- Npm -->
+                                        <div class="col">
+                                            <div class="form-outline">
+                                                <label class="form-label" for="form6Example1">NPM</label>
+                                                <input type="text" id="form6Example1" class="form-control" value="1204077"/>
+                                            </div>
+                                        </div>
+                                        <!-- Nama Mahasiswa -->
+                                        <div class="col">
+                                            <div class="form-outline">
+                                                <label class="form-label" for="form6Example2">Nama Mahasiswa</label>
+                                            <input type="text" id="form6Example2" class="form-control" value="Bachtiar Ramadhan"/>
+                                            </div>
+                                        </div>
+                                        </div>
+
+                                        <div class="row mb-2">
+                                        <!-- Program Studi -->
+                                        <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example1">Program Studi</label>
+                                                    <input type="text" id="form6Example1" class="form-control" value="14, Teknik Informatika, D4"/>
+                                                </div>
+                                            </div>
+                                        <!-- Kelas -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example2">Status</label>
+                                                <input type="text" id="form6Example2" class="form-control" value="Reguler"/>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-2">
+                                            <!-- Kelas -->
+                                            <div class="col">
+                                                    <div class="form-outline">
+                                                        <label class="form-label" for="form6Example1">Kelas</label>
+                                                        <input type="text" id="form6Example1" class="form-control" value="14-20-02"/>
+                                                    </div>
+                                                </div>
+                                            <!-- Batas Studi -->
+                                                <div class="col">
+                                                    <div class="form-outline">
+                                                        <label class="form-label" for="form6Example2">Batas Studi</label>
+                                                    <input type="text" id="form6Example2" class="form-control" value="20252"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                        <div class="row mb-2">
+                                        <!-- Status Mahasiswa -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example1">Status Mahasiswa</label>
+                                                    <input type="text" id="form6Example1" class="form-control" value="A"/>
+                                                </div>
+                                            </div>
+                                        <!-- Tempat Lahir -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example2">Tempat Lahir</label>
+                                                <input type="text" id="form6Example2" class="form-control" value="Pekanbaru, Riau"/>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-2">
+                                        <!-- Tanggal Lahir -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example1">Tanggal Lahir</label>
+                                                    <input type="text" id="form6Example1" class="form-control" value="21/12/2000"/>
+                                                </div>
+                                            </div>
+                                        <!-- Jenis Kelamin -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example2">Jenis Kelamin</label>
+                                                <input type="text" id="form6Example2" class="form-control" value="Laki-Laki"/>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-2">
+                                        <!-- Golongan Darah -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example1">Golongan Darah</label>
+                                                    <input type="text" id="form6Example1" class="form-control" value="O"/>
+                                                </div>
+                                            </div>
+                                        <!-- Agama -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example2">Agama</label>
+                                                <input type="text" id="form6Example2" class="form-control" value="Islam"/>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-2">
+                                            <!-- Alamat(Kp/Jl/KOMP) -->
+                                                <div class="col">
+                                                    <div class="form-outline">
+                                                        <label class="form-label" for="form6Example1">Alamat(Kp/Jl/KOMP)</label>
+                                                        <input type="text" id="form6Example1" class="form-control" value="Desa Cineumbeuy, Kecamatan Lebakwangi"/>
+                                                    </div>
+                                                </div>
+                                            <!-- RT -->
+                                                <div class="col">
+                                                    <div class="form-outline">
+                                                        <label class="form-label" for="form6Example2">RT</label>
+                                                    <input type="text" id="form6Example2" class="form-control" value="007"/>
+                                                    </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="row mb-2">
+                                            <!-- RW -->
+                                                <div class="col">
+                                                    <div class="form-outline">
+                                                        <label class="form-label" for="form6Example1">RW</label>
+                                                        <input type="text" id="form6Example1" class="form-control" value="002"/>
+                                                    </div>
+                                                </div>
+                                            <!-- Wilayah Kecamatan -->
+                                                <div class="col">
+                                                    <div class="form-outline">
+                                                        <label class="form-label" for="form6Example2">Wilayah Kecamatan</label>
+                                                    <input type="text" id="form6Example2" class="form-control" value="021511, Kec. Lebakwangi"/>
+                                                    </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="row mb-2">
+                                            <!-- Desa/Kelurahan -->
+                                                <div class="col">
+                                                    <div class="form-outline">
+                                                        <label class="form-label" for="form6Example1">Desa/Kelurahan</label>
+                                                        <input type="text" id="form6Example1" class="form-control" value="Cineumbeuy, Lebakwangi"/>
+                                                    </div>
+                                                </div>
+                                            <!-- Kota/Kab -->
+                                                <div class="col">
+                                                    <div class="form-outline">
+                                                        <label class="form-label" for="form6Example2">Kota/Kab</label>
+                                                    <input type="text" id="form6Example2" class="form-control" value="Kuningan"/>
+                                                    </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="row mb-2">
+                                            <!-- Kode Pos -->
+                                                <div class="col">
+                                                    <div class="form-outline">
+                                                        <label class="form-label" for="form6Example1">Kode Pos</label>
+                                                        <input type="text" id="form6Example1" class="form-control" value="45574"/>
+                                                    </div>
+                                                </div>
+                                            <!-- Provinsi -->
+                                                <div class="col">
+                                                    <div class="form-outline">
+                                                        <label class="form-label" for="form6Example2">Provinsi</label>
+                                                    <input type="text" id="form6Example2" class="form-control" value="Jawa Barat"/>
+                                                    </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="row mb-2">
+                                            <!-- Negara -->
+                                                <div class="col">
+                                                    <div class="form-outline">
+                                                        <label class="form-label" for="form6Example1">Negara</label>
+                                                        <input type="text" id="form6Example1" class="form-control" value="Indonesia"/>
+                                                    </div>
+                                                </div>
+                                            <!-- Jenis Tinggal -->
+                                                <div class="col">
+                                                    <div class="form-outline">
+                                                        <label class="form-label" for="form6Example2">Jenis Tinggal</label>
+                                                    <input type="text" id="form6Example2" class="form-control" value=""/>
+                                                    </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="row mb-2">
+                                            <!-- Alat Transportasi -->
+                                                <div class="col">
+                                                    <div class="form-outline">
+                                                        <label class="form-label" for="form6Example1">Alat Transportasi</label>
+                                                        <input type="text" id="form6Example1" class="form-control" value=""/>
+                                                    </div>
+                                                </div>
+                                            <!-- Penerima Kartu Perlindungan Sosial (KPS) -->
+                                                <div class="col">
+                                                    <div class="form-outline">
+                                                        <label class="form-label" for="form6Example2">Penerima Kartu Perlindungan Sosial (KPS)</label>
+                                                    <input type="text" id="form6Example2" class="form-control" value="Bukan Penerima"/>
+                                                    </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="row mb-2">
+                                            <!-- No. KPS -->
+                                                <div class="col">
+                                                    <div class="form-outline">
+                                                        <label class="form-label" for="form6Example1">No. KPS</label>
+                                                        <input type="text" id="form6Example1" class="form-control" value=""/>
+                                                    </div>
+                                                </div>
+                                            <!-- Kebutuhan Khusus Mahasiswa -->
+                                                <div class="col">
+                                                    <div class="form-outline">
+                                                        <label class="form-label" for="form6Example2">Kebutuhan Khusus Mahasiswa</label>
+                                                    <input type="text" id="form6Example2" class="form-control" value="0, Tidak Ada"/>
+                                                    </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="row mb-2">
+                                            <!-- No. Telepon -->
+                                                <div class="col">
+                                                    <div class="form-outline">
+                                                        <label class="form-label" for="form6Example1">No. Telepon</label>
+                                                        <input type="text" id="form6Example1" class="form-control" value="6285213921331"/>
+                                                    </div>
+                                                </div>
+                                            <!-- No. Telepon Rumah -->
+                                                <div class="col">
+                                                    <div class="form-outline">
+                                                        <label class="form-label" for="form6Example2">No. Telepon Rumah</label>
+                                                    <input type="text" id="form6Example2" class="form-control" value="6285213921331"/>
+                                                    </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="row mb-2">
+                                            <!-- Alamat Email -->
+                                                <div class="col">
+                                                    <div class="form-outline">
+                                                        <label class="form-label" for="form6Example1">Alamat Email</label>
+                                                        <input type="text" id="form6Example1" class="form-control" value="bachtiarramadhan26@gmail.com"/>
+                                                    </div>
+                                                </div>
+                                            <!-- NISN -->
+                                                <div class="col">
+                                                    <div class="form-outline">
+                                                        <label class="form-label" for="form6Example2">NISN</label>
+                                                    <input type="text" id="form6Example2" class="form-control" value=""/>
+                                                    </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="row mb-2">
+                                            <!-- Konsentrasi Pilihan -->
+                                                <div class="col">
+                                                    <div class="form-outline">
+                                                        <label class="form-label" for="form6Example1">Konsentrasi Pilihan</label>
+                                                        <input type="text" id="form6Example1" class="form-control" value=""/>
+                                                    </div>
+                                                </div>
+                                            <!-- NIK/No KTP -->
+                                                <div class="col">
+                                                    <div class="form-outline">
+                                                        <label class="form-label" for="form6Example2">NIK/No KTP</label>
+                                                    <input type="text" id="form6Example2" class="form-control" value="3208072102000006"/>
+                                                    </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="row mb-2">
+                                            <!-- Nama Ibu Kandung -->
+                                                <div class="col">
+                                                    <div class="form-outline">
+                                                        <label class="form-label" for="form6Example1">Nama Ibu Kandung</label>
+                                                        <input type="text" id="form6Example1" class="form-control" value="Liza Zenita"/>
+                                                    </div>
+                                                </div>
+                                            <!-- Alamat Orang Tua -->
+                                                <div class="col">
+                                                    <div class="form-outline">
+                                                        <label class="form-label" for="form6Example2">Alamat Orang Tua</label>
+                                                    <input type="text" id="form6Example2" class="form-control" value="Desa Cineumbeuy, Kecamatan Lebakwangi Kuningan 007 002 45574 Jawa Barat"/>
+                                                    </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="row mb-2">
+                                            <!-- Email Orang Tua -->
+                                                <div class="col">
+                                                    <div class="form-outline">
+                                                        <label class="form-label" for="form6Example1">Email Orang Tua</label>
+                                                        <input type="text" id="form6Example1" class="form-control" value="hidayatyayat8774@gmail.com"/>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <!-- Sekolah Asal -->
+                    <h1 class="h4 mb-3">Sekolah Asal</h1>
+					<div class="row">
+                        <div class="col-12">
+                          <div class="card">
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col">
+                                    <form>
+                                        <!-- 2 column grid layout with text inputs for the first and last names -->
+                                        <div class="row mb-2">
+                                        <!-- Pendidikan -->
+                                        <div class="col">
+                                            <div class="form-outline">
+                                                <label class="form-label" for="form6Example1">Pendidikan</label>
+                                                <input type="text" id="form6Example1" class="form-control" value="UMUM"/>
+                                            </div>
+                                        </div>
+                                        <!-- Nama Sekolah Asal -->
+                                        <div class="col">
+                                            <div class="form-outline">
+                                                <label class="form-label" for="form6Example2">Nama Sekolah Asal</label>
+                                            <input type="text" id="form6Example2" class="form-control" value="20212956"/>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <!-- Alamat Sekolah Asal -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example1">Alamat Sekolah Asal</label>
+                                                    <input type="text" id="form6Example1" class="form-control" value=""/>
+                                                </div>
+                                            </div>
+                                            <!-- Jurusan Pendidikan Asal -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example2">Jurusan Pendidikan Asal</label>
+                                                <input type="text" id="form6Example2" class="form-control" value="011"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <!-- Tahun Selesai -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example1">Tahun Selesai</label>
+                                                    <input type="text" id="form6Example1" class="form-control" value=""/>
+                                                </div>
+                                            </div>
+                                            <!-- Kota Pendidikan Asal -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example2">Kota Pendidikan Asal</label>
+                                                <input type="text" id="form6Example2" class="form-control" value=""/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <!-- Provinsi Pendidikan -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example1">Provinsi Pendidikan</label>
+                                                    <input type="text" id="form6Example1" class="form-control" value="Jawa Barat"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <!-- PT Asal (Pindahan) -->
+                    <h1 class="h4 mb-3">PT Asal (Pindahan)</h1>
+					<div class="row">
+                        <div class="col-12">
+                          <div class="card">
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col">
+                                    <form>
+                                        <!-- 2 column grid layout with text inputs for the first and last names -->
+                                        <div class="row mb-2">
+                                        <!-- NIM/NPM Asal -->
+                                        <div class="col">
+                                            <div class="form-outline">
+                                                <label class="form-label" for="form6Example1">NIM/NPM Asal</label>
+                                                <input type="text" id="form6Example1" class="form-control" value=""/>
+                                            </div>
+                                        </div>
+                                        <!-- Perguruan Tinggi Asal -->
+                                        <div class="col">
+                                            <div class="form-outline">
+                                                <label class="form-label" for="form6Example2">Perguruan Tinggi Asal</label>
+                                            <input type="text" id="form6Example2" class="form-control" value=""/>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <!-- Program Studi Asal -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example1">Program Studi Asal</label>
+                                                    <input type="text" id="form6Example1" class="form-control" value=""/>
+                                                </div>
+                                            </div>
+                                            <!-- Jenjang -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example2">Jenjang</label>
+                                                <input type="text" id="form6Example2" class="form-control" value="011"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <!-- Jml. SKS di Akui -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example1">Jml. SKS di Akui</label>
+                                                    <input type="text" id="form6Example1" class="form-control" value=""/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <!-- Informasi Pekerjaan -->
+                    <h1 class="h4 mb-3">Informasi Pekerjaan</h1>
+					<div class="row">
+                        <div class="col-12">
+                          <div class="card">
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col">
+                                    <form>
+                                        <!-- 2 column grid layout with text inputs for the first and last names -->
+                                        <div class="row mb-2">
+                                        <!-- Nama Perusahaan -->
+                                        <div class="col">
+                                            <div class="form-outline">
+                                                <label class="form-label" for="form6Example1">Nama Perusahaan</label>
+                                                <input type="text" id="form6Example1" class="form-control" value=""/>
+                                            </div>
+                                        </div>
+                                        <!-- Lama Bekerja -->
+                                        <div class="col">
+                                            <div class="form-outline">
+                                                <label class="form-label" for="form6Example2">Lama Bekerja</label>
+                                            <input type="text" id="form6Example2" class="form-control" value=""/>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <!-- Alamat Perusahaan -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example1">Alamat Perusahaan</label>
+                                                    <input type="text" id="form6Example1" class="form-control" value=""/>
+                                                </div>
+                                            </div>
+                                            <!-- No. Tlp. Perusahaan -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example2">No. Tlp. Perusahaan</label>
+                                                <input type="text" id="form6Example2" class="form-control" value=""/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <!-- Posisi Sebagai -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example1">Posisi Sebagai</label>
+                                                    <input type="text" id="form6Example1" class="form-control" value=""/>
+                                                </div>
+                                            </div>
+                                            <!-- Departemen/Bagian -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example2">Departemen/Bagian</label>
+                                                <input type="text" id="form6Example2" class="form-control" value=""/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <!-- Data Orang Tua -->
+                    <h1 class="h4 mb-3">Data Orang Tua</h1>
+					<div class="row">
+                        <div class="col-12">
+                          <div class="card">
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col">
+                                    <form>
+                                        <!-- 2 column grid layout with text inputs for the first and last names -->
+                                        <div class="row mb-2">
+                                        <!-- NIK Ibu -->
+                                        <div class="col">
+                                            <div class="form-outline">
+                                                <label class="form-label" for="form6Example1">NIK Ibu</label>
+                                                <input type="text" id="form6Example1" class="form-control" value=""/>
+                                            </div>
+                                        </div>
+                                        <!-- Tanggal Lahir Ibu -->
+                                        <div class="col">
+                                            <div class="form-outline">
+                                                <label class="form-label" for="form6Example2">Tanggal Lahir Ibu</label>
+                                            <input type="text" id="form6Example2" class="form-control" value=""/>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <!-- Pendidikan Ibu -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example1">Pendidikan Ibu</label>
+                                                    <input type="text" id="form6Example1" class="form-control" value=""/>
+                                                </div>
+                                            </div>
+                                            <!-- Penghasilan Ibu -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example2">Penghasilan Ibu</label>
+                                                <input type="text" id="form6Example2" class="form-control" value=""/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <!-- Kebutuhan Khusus Ibu -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example1">Kebutuhan Khusus Ibu</label>
+                                                    <input type="text" id="form6Example1" class="form-control" value="Tidak Ada"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <!-- Nama Ayah -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example1">Nama Ayah</label>
+                                                    <input type="text" id="form6Example1" class="form-control" value="Yayat Hidayat"/>
+                                                </div>
+                                            </div>
+                                            <!-- NIK Ayah -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example2">NIK Ayah</label>
+                                                <input type="text" id="form6Example2" class="form-control" value=""/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <!-- Tanggal Lahir Ayah -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example1">Tanggal Lahir Ayah</label>
+                                                    <input type="text" id="form6Example1" class="form-control" value=""/>
+                                                </div>
+                                            </div>
+                                            <!-- Pendidikan Ayah -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example2">Pendidikan Ayah</label>
+                                                <input type="text" id="form6Example2" class="form-control" value=""/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <!-- Pekerjaan Ayah -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example1">Pekerjaan Ayah</label>
+                                                    <input type="text" id="form6Example1" class="form-control" value=""/>
+                                                </div>
+                                            </div>
+                                            <!-- Penghasilan Ayah -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example2">Penghasilan Ayah</label>
+                                                <input type="text" id="form6Example2" class="form-control" value=""/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <!-- Kebutuhan Khusus Ayah -->
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form6Example1">Kebutuhan Khusus Ayah</label>
+                                                    <input type="text" id="form6Example1" class="form-control" value="Tidak Ada"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
 				</div>
 			</main>
 
