@@ -10,13 +10,13 @@
 	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="shortcut icon" href="static/img/icons/LOGO ULBI - POTRAIT DARK.png" />
+	<link rel="shortcut icon" href="img/icons/LOGO ULBI - POTRAIT DARK.png" />
 
 	<link rel="canonical" href="https://demo-basic.adminkit.io/" />
 
 	<title>Sistem Informasi Akademik</title>
 
-	<link href="static/css/app.css" rel="stylesheet">
+	<link href="css/app.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
@@ -25,28 +25,28 @@
 		<nav id="sidebar" class="sidebar js-sidebar">
 			<div class="sidebar-content js-simplebar">
 				<a class="sidebar-brand" href="index.html">
-          <img src="static/img/LOGO ULBI - WIDE BACKGROUNG NEVY.png" style="width: 125px; margin-left: 35px;">
+          <img src="img/LOGO ULBI - WIDE BACKGROUNG NEVY.png" style="width: 125px; margin-left: 35px;">
         </a>
 
 				<ul class="sidebar-nav">
 
 			<!-- Menu Dashboard -->
-					<li class="sidebar-item active">
-						<a class="sidebar-link" href="./index.html">
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="../index.html">
               <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
             </a>
 					</li>
 
 			<!-- Menu Informasi & Pengumuman -->
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="static/informasi-pengumuman.html">
+						<a class="sidebar-link" href="informasi-pengumuman.html">
               <i class="align-middle me-2" data-feather="info"></i> <span class="align-middle">Informasi & Pengumuman</span>
             </a>
 					</li>
 
 			<!-- Menu Profil Mahasiswa -->
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="static/profil-mahasiswa.html">
+					<li class="sidebar-item active">
+						<a class="sidebar-link" href="profil-mahasiswa.html">
               <i class="align-middle" data-feather="user"></i> <span class="align-middle">Profil Mahasiswa</span>
             </a>
 					</li>
@@ -270,7 +270,7 @@
               </a>
 
 							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
-                <img src="static/img/avatars/student-icon.jpg" class="avatar img-fluid rounded me-1"/>
+                <img src="img/avatars/student-icon.jpg" class="avatar img-fluid rounded me-1"/>
               </a>
 							<div class="dropdown-menu dropdown-menu-end">
 								<a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1" data-feather="user"></i> Change Password</a>
@@ -283,22 +283,27 @@
 
 			<main class="content">
 				<div class="container-fluid p-0">
-					<h5 class="right-aligned" style="float: right">
-						<a href="index.html">Home</a> / Dashboard
-					</h5>
-					<h1 class="h3 mb-3"><strong>Dashboard</strong></h1>
-
+                    <h5 class="right-aligned" style="float: right">
+                        <a href="index.html">Home</a> / Profil Mahasiswa
+                    </h5>
+					<h1 class="h3 mb-3"><strong>Profil Mahasiswa</strong></h1>
 					<div class="row">
-						<h1 class="h4 mb-3">Aktifitas Akademik</h1>
+                        <!-- Tabel Profil Mahasiswa -->
 						<div class="col-12">
 							<div class="card flex-fill">
 								<table class="table align-middle mb-0 bg-white">
 									<thead class="bg-light">
 									  <tr>
-										<th>Tahun Akademik</th>
-										<th>Jumlah SKS</th>
-										<th>IPS</th>
-										<th>% Hadir</th>
+										<th>Foto</th>
+										<th>NPM</th>
+										<th>Nama Mahasiswa</th>
+										<th>Program Studi</th>
+										<th>Status</th>
+                                        <th>No. Telepon</th>
+                                        <th>Email</th>
+                                        <th>Angkatan</th>
+                                        <th>Kelas</th>
+                                        <th>Action</th>
 									  </tr>
 									</thead>
 									<tbody>
@@ -306,176 +311,44 @@
 										<td>
 										  <div class="d-flex align-items-center">
 											<div class="ms-3">
-											  <p class="fw-bold mb-1">2020-2021-1</p>
+											  <p class="fw-bold mb-1">Foto</p>
 											</div>
 										  </div>
 										</td>
 										<td>
-										  <p class="fw-normal mb-1">22</p>
+										  <p class="fw-normal mb-1">1204077</p>
 										</td>
 										<td>
-										  <p class="fw-normal mb-1">3.59</p>
+										  <p class="fw-normal mb-1">Bachtiar Ramadhan</p>
 										</td>
 										<td>
-										  <p class="fw-normal mb-1">100%</p>
-										</td>
-									  </tr>
-									  <tr>
-										<td>
-										  <div class="d-flex align-items-center">
-											<div class="ms-3">
-											  <p class="fw-bold mb-1">2020-2021-2</p>
-											</div>
-										  </div>
+										  <p class="fw-normal mb-1">14, Teknik Informatika, D4</p>
 										</td>
 										<td>
-										  <p class="fw-normal mb-1">24</p>
+										  <p class="fw-normal mb-1">Reguler</p>
 										</td>
+                                        <td>
+                                          <p class="fw-normal mb-1">6285213921331</p>
+                                        </td>
 										<td>
-										  <p class="fw-normal mb-1">3.88</p>
-										</td>
-										<td>
-										  <p class="fw-normal mb-1">100%</p>
-										</td>
-									  </tr>
-									  <tr>
-										<td>
-										  <div class="d-flex align-items-center">
-											<div class="ms-3">
-											  <p class="fw-bold mb-1">2021-2022-1</p>
-											</div>
-										  </div>
-										</td>
-										<td>
-										  <p class="fw-normal mb-1">22</p>
-										</td>
-										<td>
-										  <p class="fw-normal mb-1">3.86</p>
-										</td>
-										<td>
-										  <p class="fw-normal mb-1">100%</p>
-										</td>
-									  </tr>
-									  <tr>
-										<td>
-										  <div class="d-flex align-items-center">
-											<div class="ms-3">
-											  <p class="fw-bold mb-1">2021-2022-2</p>
-											</div>
-										  </div>
-										</td>
-										<td>
-										  <p class="fw-normal mb-1">22</p>
-										</td>
-										<td>
-										  <p class="fw-normal mb-1">4.00</p>
-										</td>
-										<td>
-										  <p class="fw-normal mb-1">100%</p>
-										</td>
-									  </tr>
-									  <tr>
-										<td>
-										  <div class="d-flex align-items-center">
-											<div class="ms-3">
-											  <p class="fw-bold mb-1">2022-2023-1</p>
-											</div>
-										  </div>
-										</td>
-										<td>
-										  <p class="fw-normal mb-1">22</p>
-										</td>
-										<td>
-										  <p class="fw-normal mb-1">3.86</p>
-										</td>
-										<td>
-										  <p class="fw-normal mb-1">100%</p>
-										</td>
-									  </tr>
-									  <tr>
-										<td>
-										  <div class="d-flex align-items-center">
-											<div class="ms-3">
-											  <p class="fw-bold mb-1">2022-2023-2</p>
-											</div>
-										  </div>
-										</td>
-										<td>
-										  <p class="fw-normal mb-1">22</p>
-										</td>
-										<td>
-										  <p class="fw-normal mb-1">3.84</p>
-										</td>
-										<td>
-										  <p class="fw-normal mb-1">88.75%</p>
-										</td>
-									  </tr>
-									  									  <tr>
-										<td>
-										  <div class="d-flex align-items-center">
-											<div class="ms-3">
-											  <p class="fw-bold mb-1">2023-2024-1</p>
-											</div>
-										  </div>
-										</td>
-										<td>
-										  <p class="fw-normal mb-1">4</p>
-										</td>
-										<td>
-										  <p class="fw-normal mb-1">0.00</p>
-										</td>
-										<td>
-										  <p class="fw-normal mb-1">0.00%</p>
-										</td>
+                                          <p class="fw-normal mb-1">bachtiarramadhan26@gmail.com</p>
+                                        </td>
+                                        <td>
+                                          <p class="fw-normal mb-1">2020</p>
+                                        </td>
+                                        <td>
+                                          <p class="fw-normal mb-1">14-20-02</p>
+                                        </td>
+                                        <td>
+                                          <button class="btn btn-primary btn-sm">Detail</button>
+                                          <button class="btn btn-warning btn-sm">Edit</button>
+                                        </td>
 									  </tr>
 									</tbody>
 								  </table>
 							</div>
 						</div>
-
-						<h1 class="h4 mb-3">Progres Studi</h1>
-						<div class="col-12">
-							<div class="card flex-fill">
-								<table class="table align-middle mb-0 bg-white">
-									<thead class="bg-light">
-									  <tr>
-										<th>Total SKS</th>
-										<th>Minimal SKS</th>
-										<th>IPK</th>
-										<th>Batas Studi</th>
-										<th>Semester Ke</th>
-									  </tr>
-									</thead>
-									<tbody>
-									  <tr>
-										<td>
-										  <div class="d-flex align-items-center">
-											<div class="ms-3">
-											  <p class="fw-bold mb-1">125</p>
-											</div>
-										  </div>
-										</td>
-										<td>
-										  <p class="fw-normal mb-1">1444</p>
-										</td>
-										<td>
-										  <p class="fw-normal mb-1">3.86</p>
-										</td>
-										<td>
-										  <p class="fw-normal mb-1">20252</p>
-										</td>
-										<td>
-										  <p class="fw-normal mb-1">7</p>
-										</td>
-									  </tr>
-									</tbody>
-								  </table>
-							</div>
-						</div>
-
-						
 					</div>
-
 				</div>
 			</main>
 
@@ -509,7 +382,7 @@
 		</div>
 	</div>
 
-	<script src="static/js/app.js"></script>
+	<script src="js/app.js"></script>
 
 	
 
