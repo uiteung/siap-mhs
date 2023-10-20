@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+	<meta name="author" content="AdminKit">
+	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="../static/img/icons/LOGO ULBI - POTRAIT DARK.png" />
+
+	<link rel="canonical" href="https://demo-basic.adminkit.io/" />
+
+	<title>Sistem Informasi Akademik</title>
+
+	<link href="../static/css/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="index.html">
+          <img src="../static/img/LOGO ULBI - WIDE BACKGROUNG NEVY.png" style="width: 125px; margin-left: 35px;">
+        </a>
+
+				<ul class="sidebar-nav">
+
+			<!-- Menu Dashboard -->
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="./index.html">
+              <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
+            </a>
+					</li>
+
+			<!-- Menu Informasi & Pengumuman -->
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="informasi-pengumuman.html">
+              <i class="align-middle me-2" data-feather="info"></i> <span class="align-middle">Informasi & Pengumuman</span>
+            </a>
+					</li>
+
+			<!-- Menu Profil Mahasiswa -->
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="profil-mahasiswa.html">
+              <i class="align-middle" data-feather="user"></i> <span class="align-middle">Profil Mahasiswa</span>
+            </a>
+					</li>
+
+			<!-- Menu Dosen Wali -->
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="dosen-wali.html">
+              <i class="align-middle" data-feather="users"></i> <span class="align-middle">Dosen Wali</span>
+            </a>
+					</li>
+
+			<!-- Menu Perwalian & KRS -->
+			<li class="sidebar-item">
+				<a class="sidebar-link" data-bs-toggle="collapse" href="#perwalian-krs">
+				<i class="align-middle" data-feather="printer"></i> <span class="align-middle">Perwalian & KRS</span>
+				</a>
+				<div class="sidebar-submenu collapse" id="perwalian-krs">
+				<ul class="sidebar-nav">
+					<li class="sidebar-item">
+					<a class="sidebar-link" href="perwalian/perwalian-krs.html">
+						Perwalian KRS
+					</a>
+					</li>
+					<li class="sidebar-item">
+					<a class="sidebar-link" href="perwalian/perwalian-krs.html">
+						Perubahan KRS
+					</a>
+					</li>
+					<li class="sidebar-item">
+					<a class="sidebar-link" href="perwalian/perwalian-krs.html">
+						Mengulang
+					</a>
+					</li>
+					<li class="sidebar-item">
+					<a class="sidebar-link" href="perwalian/rencana-studi.html">
+						Rencana Studi (KRS)
+					</a>
+					</li>
+				</ul>
+				</div>
+			</li>
+  
+			<!-- Menu Informasi Keuangan -->
+			<li class="sidebar-item active">
+				<a class="sidebar-link" data-bs-toggle="collapse" href="#informasi-keuangan">
+              	<i class="align-middle" data-feather="bookmark"></i> <span class="align-middle">Informasi Keuangan</span>
+            	</a>
+				<div class="sidebar-submenu collapse" id="informasi-keuangan">
+					<ul class="sidebar-nav">
+						<li class="sidebar-item">
+						<a class="sidebar-link" href="#">
+							Riwayat Pembayaran
+						</a>
+						</li>
+						<li class="sidebar-item">
+						<a class="sidebar-link" href="#">
+							Dispensasi Keuangan
+						</a>
+						</li>
+						<li class="sidebar-item">
+						<a class="sidebar-link" href="#">
+							Biaya Mengulang MK
+						</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+
+			<!-- Menu Nilai -->
+			<li class="sidebar-item">
+				<a class="sidebar-link" data-bs-toggle="collapse" href="#nilai">
+              	<i class="align-middle" data-feather="activity"></i> <span class="align-middle">Nilai</span>
+            	</a>
+				<div class="sidebar-submenu collapse" id="nilai">
+					<ul class="sidebar-nav">
+						<li class="sidebar-item">
+						<a class="sidebar-link" href="#">
+							Index Prestasi Semester
+						</a>
+						</li>
+						<li class="sidebar-item">
+						<a class="sidebar-link" href="#">
+							Index Prestasi Komulatif
+						</a>
+						</li>
+						<li class="sidebar-item">
+						<a class="sidebar-link" href="#">
+							Progres Nilai
+						</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+
+			<!-- Menu Jadwal -->
+			<li class="sidebar-item">
+				<a class="sidebar-link" data-bs-toggle="collapse" href="#jadwal">
+              	<i class="align-middle" data-feather="calendar"></i> <span class="align-middle">Jadwal</span>
+            	</a>
+				<div class="sidebar-submenu collapse" id="jadwal">
+					<ul class="sidebar-nav">
+						<li class="sidebar-item">
+						<a class="sidebar-link" href="#">
+							Jadwal Kuliah
+						</a>
+						</li>
+						<li class="sidebar-item">
+						<a class="sidebar-link" href="#">
+							Jadwal Ujian
+						</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+
+			<!-- Menu Kampus Merdeka -->
+			<li class="sidebar-item">
+				<a class="sidebar-link" data-bs-toggle="collapse" href="#kampus-merdeka">
+              	<i class="align-middle" data-feather="send"></i> <span class="align-middle">Kampus Merdeka</span>
+            	</a>
+				<div class="sidebar-submenu collapse" id="kampus-merdeka">
+					<ul class="sidebar-nav">
+						<li class="sidebar-item">
+						<a class="sidebar-link" href="#">
+							Pendamping/Log Book
+						</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+
+			<!-- Menu SKPI -->
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="icons-feather.html">
+              <i class="align-middle" data-feather="file-text"></i> <span class="align-middle">SKPI</span>
+            </a>
+					</li>
+
+			<!-- Menu Tugas Akhir & Skripsi -->
+			<li class="sidebar-item">
+				<a class="sidebar-link" data-bs-toggle="collapse" href="#tugas-akhir-skripsi">
+              	<i class="align-middle" data-feather="book-open"></i> <span class="align-middle">Tugas Akhir & Skripsi</span>
+            	</a>
+				<div class="sidebar-submenu collapse" id="tugas-akhir-skripsi">
+					<ul class="sidebar-nav">
+						<li class="sidebar-item">
+						<a class="sidebar-link" href="#">
+							Log Bimbingan
+						</a>
+						</li>
+						<li class="sidebar-item">
+						<a class="sidebar-link" href="#">
+							Agenda Sidang
+						</a>
+						</li>
+						<li class="sidebar-item">
+						<a class="sidebar-link" href="#">
+							Jadwal Sidang
+						</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+
+			<!-- Menu Uploud Penelitian -->
+			<li class="sidebar-item">
+				<a class="sidebar-link" data-bs-toggle="collapse" href="#uploud-penelitian">
+              	<i class="align-middle" data-feather="upload"></i> <span class="align-middle">Upload Penelitian</span>
+            	</a>
+				<div class="sidebar-submenu collapse" id="uploud-penelitian">
+					<ul class="sidebar-nav">
+						<li class="sidebar-item">
+						<a class="sidebar-link" href="#">
+							Uploud Berkas Skripsi
+						</a>
+						</li>
+						<li class="sidebar-item">
+						<a class="sidebar-link" href="#">
+							Uploud Program Skripsi
+						</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			
+			<!-- Menu Pendaftaran Wisuda -->
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="maps-google.html">
+			<i class="align-middle" data-feather="user-plus"></i> <span class="align-middle">Pendaftaran Wisuda</span>
+			</a>
+					</li>
+
+			<!-- Menu Download -->
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="maps-google.html">
+			<i class="align-middle" data-feather="download"></i> <span class="align-middle">Download</span>
+			</a>
+					</li>
+
+			<!-- Menu Saran & Keluhan -->
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="maps-google.html">
+			<i class="align-middle" data-feather="message-circle"></i> <span class="align-middle">Saran & Keluhan</span>
+			</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle js-sidebar-toggle">
+          <i class="hamburger align-self-center"></i>
+        </a>
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown">
+                <i class="align-middle" data-feather="settings"></i>
+              </a>
+
+							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
+                <img src="../static/img/avatars/student-icon.jpg" class="avatar img-fluid rounded me-1"/>
+              </a>
+							<div class="dropdown-menu dropdown-menu-end">
+								<a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1" data-feather="user"></i> Change Password</a>
+								<a class="dropdown-item" href="login.html"><i class="align-middle me-1" data-feather="log-out"></i> Log Out</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<main class="content">
+				<div class="container-fluid p-0">
+					<h5 class="right-aligned" style="float: right">
+						<a href="index.html">Home</a> / Informasi Keuangan
+					</h5>
+					<h1 class="h3 mb-3"><strong>Riwayat Pembayaran</strong></h1>
+
+					<div class="row">
+						<div class="col-12">
+							<div class="card flex-fill">
+								<table class="table align-middle mb-0 bg-white">
+									<thead class="bg-light">
+									  <tr>
+                                        <th>No.</th>
+										<th>Tahun</th>
+                                        <th>Periode</th>
+										<th>NIM | Nama Mahasiswa</th>
+										<th>Virtual Account</th>
+										<th>Jml. Tagihan</th>
+                                        <th>Jml. Bayar</th>
+                                        <th>Sisa</th>
+                                        <th>Keterangan</th>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr>
+										<td>
+										  <p class="fw-normal mb-1">1</p>
+										</td>
+										<td>
+										  <p class="fw-normal mb-1">2023-2024</p>
+										</td>
+										<td>
+										  <p class="fw-normal mb-1">1, Ganjil</p>
+										</td>
+                                        <td>
+										  <p class="fw-normal mb-1">1204077, Bachtiar Ramadhan</p>
+										</td>
+                                        <td>
+										  <p class="fw-normal mb-1">9884520201104077</p>
+										</td>
+                                        <td>
+                                          <p class="fw-normal mb-1">7,600,000.00</p>
+                                        </td>
+                                        <td>
+                                          <p class="fw-normal mb-1">3,800,000.00</p>
+                                        </td>
+                                        <td>
+                                          <p class="fw-normal mb-1">3,800,000.00</p>
+                                        </td>
+                                        <td>
+                                          <p class="fw-normal mb-1">SPP GANJIL TA 2023-2024</p>
+                                        </td>
+									  </tr>
+									</tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th>Total : 7,600,000.00</th>
+                                            <th>Total : 3,800,000.00</th>
+                                            <th>Total : 3,800,000.00</th>
+                                            <th></th>
+                                          </tr>
+                                    </tfoot>
+								  </table>
+							</div>
+						</div>						
+					</div>
+
+				</div>
+			</main>
+
+			<footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-start">
+							<p class="mb-0">
+								<a class="text-muted" href="https://adminkit.io/" target="_blank"><strong>DTI ULBI 2023</strong></a> &copy;
+							</p>
+						</div>
+						<div class="col-6 text-end">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://adminkit.io/" target="_blank">Support</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://adminkit.io/" target="_blank">Help Center</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://adminkit.io/" target="_blank">Privacy</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://adminkit.io/" target="_blank">Terms</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<script src="../static/js/app.js"></script>
+
+	
+
+</body>
+
+</html>
